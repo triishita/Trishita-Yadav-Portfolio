@@ -170,7 +170,7 @@ section {
   
 .section__text__p2::after {
     content: "Student";
-    animation: changeText 5s infinite;
+    animation: changeText 7s infinite;
 }
   
 #profile {
