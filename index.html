@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">My Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Trishita Yadav profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Trishita Yadav</h1>
+        <p class="section__text__p2" id="dynamic-text"></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume Trishita Yadav.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/trishita-yadav-2172b425a/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/triishita'"
+          />
+          <img
+            src="./assets/linktree.jpeg"
+            alt="My Linktree profile"
+            class="icon"
+            onclick="location.href='https://linktr.ee/trishitayadav'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              Hello, I'm a 2nd year CSE student, an aspiring Software Developer.<br />I'm a passionate, hardworking and competitive individual who loves to explore and learn new things.
+              <br />I love participating in hackathons, embracing challenges and collaborating with diverse teams to build impactful solutions. 
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="text-container">
+              <h3>Education</h3>
+              <p>1. SRM Institute of Science and Technology, Kattankulathur, Tamil Nadu (2022 - 2026)<br />Bachelor of Technology in Computer Science and Engineering<br />CGPA – 9.61</p>
+              <p><br /></p>
+              <p>2. Madhu Vachaspati Convent Inter College, Prayagraj, Uttar Pradesh (2020 - 2022)<br />CBSE (class XII) – 79.6 %</p>
+              <p><br /></p>
+              <p>3. Girls' High School & College, Prayagraj, Uttar Pradesh (2009 - 2020)<br />ICSE (class X) – 94.6 %</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <p class="section__text__p1">Here's my</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Activities</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>IEEE SRMIST Student Branch</h3>
+                  <h5>Industrial Applications Society Member</h5>
+                  <p><br /></p>
+                  <p>• Promoted as Project Lead.<br />
+                    • Get to work with AI, Electronics, Embedded systems and many more.<br />
+                    • Significant contributor in the development of hands-on projects.</p>
+                  <p><br /></p>
+                  <h3>Hackathons</h3>
+                  <p>• Full Stack Web Development Hackathon by FLiPR<br />
+                      • CodeFest’24 by School of Computing, SRMIST<br />
+                      • RoboGPT by Women in Tech club and NWC Dept. in collaboration with Orangewood Labs</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Skills</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>• Languages:</h3>
+                  <p>C/C++, Python, Java, HTML, CSS, JavaScript</p>
+                  <p><br /></p>
+                  <h3>• Database and Libraries:</h3>
+                  <p>NumPy, Pandas, Matplotlib, Scikit-learn, Tensorflow, Keras, OpenCV, PyTorch, MySQL, SQLite, Streamlit</p>
+                  <p><br /></p>
+                  <h3>• Soft skills:</h3> 
+                  <p>Problem Solving, Adaptability, Time-Management, Self-learn, Teamwork</p> 
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Certification</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>NPTEL</h3>
+                  <p>• Programming in Java</p>
+                  <p><br /></p>
+                  <h3>Google</h3>
+                  <p>• Android Developer Virtual Internship<br />
+                    • AI-ML Virtual Internship – Google</p>
+                  <p><br /></p>
+                  <h3>AWS</h3>
+                  <p>• Machine Learning Foundations<br />• Data Analytics</p>
+                  <p><br /></p>
+                  <h3>MathWorks</h3>
+                  <p>• Machine Learning with MATLAB<br />• MATLAB for Data Processing and Visualization<br />
+                    • MATLAB Onramp</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Controlling Smart Appliances by Detecting Eye Status</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/triishita/AIOT_PROJECT'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Human Detection using YOLOv5</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/triishita/Human-detection-using-YOLOv5'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Resume Screening</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/https://github.com/triishita/Resume-screening'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/qr-code.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">QR Code Gen-T</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/triishita/QR-Code-Generator'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-5.jpeg"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Trinity Rich Bank </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/triishita/Trinity-Rich-Bank'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">trishitayadav11@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/trishita-yadav-2172b425a/">LinkedIn</a></p>
+          </div>
+          <!-- New Contact Number -->
+          <div class="contact-info-container">
+            <img
+              src="./assets/phone.jpeg"
+              alt="Phone icon"
+              class="icon contact-icon"
+            />
+            <p>(+91) 7524908100</p>
+          </div>
+        </div>
+      </section>
+      
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; 2024 by Trishita Yadav</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
